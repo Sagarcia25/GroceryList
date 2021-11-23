@@ -13,6 +13,10 @@
 		7A7F64722749637F00689516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F64702749637F00689516 /* Main.storyboard */; };
 		7A7F64742749638200689516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F64732749638200689516 /* Assets.xcassets */; };
 		7A7F64772749638200689516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F64752749638200689516 /* LaunchScreen.storyboard */; };
+		7A7F647F2749662300689516 /* GroceryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F647E2749662300689516 /* GroceryTableViewController.swift */; };
+		7A7F648327496B0F00689516 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F648227496B0F00689516 /* GroceryItem.swift */; };
+		7A7F648727496E1F00689516 /* LocalSorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F648627496E1F00689516 /* LocalSorage.swift */; };
+		7A7F648C274977B800689516 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F648B274977B800689516 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7A7F64732749638200689516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A7F64762749638200689516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A7F64782749638200689516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7F647E2749662300689516 /* GroceryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryTableViewController.swift; sourceTree = "<group>"; };
+		7A7F648227496B0F00689516 /* GroceryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		7A7F648627496E1F00689516 /* LocalSorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSorage.swift; sourceTree = "<group>"; };
+		7A7F648B274977B800689516 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemTableViewCell.swift; path = ../Views/ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				7A7F646A2749637F00689516 /* AppDelegate.swift */,
 				7A7F646C2749637F00689516 /* SceneDelegate.swift */,
-				7A7F646E2749637F00689516 /* ViewController.swift */,
-				7A7F64702749637F00689516 /* Main.storyboard */,
+				7A7F648A274971BC00689516 /* Models */,
+				7A7F6489274971AB00689516 /* Views */,
+				7A7F64882749718D00689516 /* Controllers */,
 				7A7F64732749638200689516 /* Assets.xcassets */,
 				7A7F64752749638200689516 /* LaunchScreen.storyboard */,
 				7A7F64782749638200689516 /* Info.plist */,
 			);
 			path = GroceryListDemo;
+			sourceTree = "<group>";
+		};
+		7A7F64882749718D00689516 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F646E2749637F00689516 /* ViewController.swift */,
+				7A7F647E2749662300689516 /* GroceryTableViewController.swift */,
+				7A7F648B274977B800689516 /* ItemTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A7F6489274971AB00689516 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F64702749637F00689516 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A7F648A274971BC00689516 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F648227496B0F00689516 /* GroceryItem.swift */,
+				7A7F648627496E1F00689516 /* LocalSorage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +176,11 @@
 			files = (
 				7A7F646F2749637F00689516 /* ViewController.swift in Sources */,
 				7A7F646B2749637F00689516 /* AppDelegate.swift in Sources */,
+				7A7F647F2749662300689516 /* GroceryTableViewController.swift in Sources */,
+				7A7F648327496B0F00689516 /* GroceryItem.swift in Sources */,
 				7A7F646D2749637F00689516 /* SceneDelegate.swift in Sources */,
+				7A7F648C274977B800689516 /* ItemTableViewCell.swift in Sources */,
+				7A7F648727496E1F00689516 /* LocalSorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
